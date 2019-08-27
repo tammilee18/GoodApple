@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GoodApple.Migrations
 {
     [DbContext(typeof(GoodAppleContext))]
-    [Migration("20190827180553_FirstMig")]
+    [Migration("20190827184629_FirstMig")]
     partial class FirstMig
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -123,7 +123,8 @@ namespace GoodApple.Migrations
                     b.Property<DateTime>("CreatedAt");
 
                     b.Property<string>("Discriminator")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasMaxLength(200);
 
                     b.Property<string>("Email")
                         .IsRequired();

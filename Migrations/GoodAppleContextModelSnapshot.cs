@@ -121,7 +121,8 @@ namespace GoodApple.Migrations
                     b.Property<DateTime>("CreatedAt");
 
                     b.Property<string>("Discriminator")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasMaxLength(200);
 
                     b.Property<string>("Email")
                         .IsRequired();

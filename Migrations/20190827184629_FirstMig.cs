@@ -20,7 +20,7 @@ namespace GoodApple.Migrations
                     Password = table.Column<string>(nullable: false),
                     CreatedAt = table.Column<DateTime>(nullable: false),
                     UpdatedAt = table.Column<DateTime>(nullable: false),
-                    Discriminator = table.Column<string>(nullable: false),
+                    Discriminator = table.Column<string>(maxLength: 200, nullable: false),
                     District = table.Column<string>(nullable: true),
                     School = table.Column<string>(nullable: true),
                     Subject = table.Column<string>(nullable: true)
