@@ -56,27 +56,52 @@ namespace GoodApple.Controllers
         }
 
         [HttpGet("dashboard/{TeacherId}")]
-        public IActionResult TeachDashboard(int TeacherId)
+        public IActionResult TeacherLogin(LoginUser existingTeacher){
+            if(ModelState.IsValid){
+                User userInDB = dbContext.users.FirstOrDefault(u => u.Email == existingTeacher.Email);
+                if(userInDB == null){
+                    ModelState.AddModelError("Email", "Invalid email or password");
+                    return View("Index", "Home");
+                } else {
+                    var hasher = new PasswordHasher<LoginUser>();
+                    var result = hasher.VerifyHashedPassword(existingTeacher, userInDB.Password, existingTeacher.Password);
+                    if(result == 0){
+                        ModelState.AddModelError("Password", "Invalid email or password");
+                        return RedirectToAction("Index", "Home");
+                    }
+                    if(HttpContext.Session.GetInt32("UserId") == null){
+                        HttpContext.Session.SetInt32("UserId", userInDB.UserId);
+                    }
+                    return RedirectToAction("TeachDashboard");
+                }
+            } else {
+                return View("Index", "Home");
+            }
+        }
+
+        [HttpGet("dashboard")]
+        public IActionResult TeachDashboard()
         {
-             TeacherId = (int)InSession;
+            int TeacherId = (int)InSession;
             // if(InSession == null){
             //     return View("Index", "Home");
             // }
-
-            List<Project> AllProjects = dbContext.projects.ToList();
-            return View();
+            WrapperModel newModel = new WrapperModel();
+            newModel.AllProjects = dbContext.projects.Include(p => p.Donors).ToList();
+            return View(newModel);
         }
 
         [HttpPost("newproject")]
         public IActionResult NewProject(Project newProject)
         {
-
             if(ModelState.IsValid){
                 newProject.CreatorId = 1;
                 dbContext.projects.Add(newProject);
                 dbContext.SaveChanges();
-                 return RedirectToAction("TeachDashboard");
+                return RedirectToAction("TeachDashboard");
             }
+            WrapperModel newModel = new WrapperModel();
+            newModel.AllProjects = dbContext.projects.ToList();
             return View("TeachDashboard");
         }
 

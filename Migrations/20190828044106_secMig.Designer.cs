@@ -3,14 +3,16 @@ using System;
 using GoodApple.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GoodApple.Migrations
 {
     [DbContext(typeof(GoodAppleContext))]
-    partial class GoodAppleContextModelSnapshot : ModelSnapshot
+    [Migration("20190828044106_secMig")]
+    partial class secMig
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

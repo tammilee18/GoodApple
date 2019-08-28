@@ -29,6 +29,7 @@
 /Users/tammilee/Desktop/codingDojo/csharp/GoodApple/obj/Debug/netcoreapp2.2/GoodApple.pdb
 /Users/tammilee/Desktop/codingDojo/csharp/GoodApple/obj/Debug/netcoreapp2.2/GoodApple.csproj.CopyComplete
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\Jackie\Desktop\GoodApple\GoodApple\bin\Debug\netcoreapp2.2\GoodApple.deps.json
 C:\Users\Jackie\Desktop\GoodApple\GoodApple\bin\Debug\netcoreapp2.2\GoodApple.runtimeconfig.json
 C:\Users\Jackie\Desktop\GoodApple\GoodApple\bin\Debug\netcoreapp2.2\GoodApple.runtimeconfig.dev.json
@@ -67,9 +68,57 @@ C:\Users\Jackie\Desktop\GoodApple\GoodApple\obj\Debug\netcoreapp2.2\Razor\Views\
 C:\Users\Jackie\Desktop\GoodApple\GoodApple\obj\Debug\netcoreapp2.2\Razor\Views\Teacher\ProjectPartial.g.cshtml.cs
 C:\Users\Jackie\Desktop\GoodApple\GoodApple\obj\Debug\netcoreapp2.2\Razor\Views\Teacher\EditProject.g.cshtml.cs
 =======
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/bin/Debug/netcoreapp2.2/GoodApple.deps.json
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/bin/Debug/netcoreapp2.2/GoodApple.runtimeconfig.json
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/bin/Debug/netcoreapp2.2/GoodApple.runtimeconfig.dev.json
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/bin/Debug/netcoreapp2.2/GoodApple.dll
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/bin/Debug/netcoreapp2.2/GoodApple.pdb
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/bin/Debug/netcoreapp2.2/GoodApple.Views.dll
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/bin/Debug/netcoreapp2.2/GoodApple.Views.pdb
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/GoodApple.csprojAssemblyReference.cache
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/GoodApple.csproj.CoreCompileInputs.cache
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/GoodApple.RazorAssemblyInfo.cache
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/GoodApple.RazorAssemblyInfo.cs
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/GoodApple.AssemblyInfoInputs.cache
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/GoodApple.AssemblyInfo.cs
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/GoodApple.TagHelpers.input.cache
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/GoodApple.TagHelpers.output.cache
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/GoodApple.RazorCoreGenerate.cache
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Home/Privacy.g.cshtml.cs
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Shared/Error.g.cshtml.cs
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.cs
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout.g.cshtml.cs
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.g.cshtml.cs
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/_ViewStart.g.cshtml.cs
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/GoodApple.RazorTargetAssemblyInfo.cache
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/GoodApple.RazorTargetAssemblyInfo.cs
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/GoodApple.Views.pdb
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/GoodApple.dll
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/GoodApple.pdb
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/GoodApple.csproj.CopyComplete
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Home/LoginPartial.g.cshtml.cs
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Home/AllProjects.g.cshtml.cs
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Home/ProjectInfo.g.cshtml.cs
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/TeachDashboard.g.cshtml.cs
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/TeacherReg.g.cshtml.cs
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/ProjectPartial.g.cshtml.cs
+C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/EditProject.g.cshtml.cs
+>>>>>>> fe3b5b5ab7c2a485f7438a71285b42ce8ae361bf
+=======
 /Users/tammilee/Desktop/codingDojo/csharp/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Home/LoginPartial.g.cshtml.cs
 /Users/tammilee/Desktop/codingDojo/csharp/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Donor/newDonor.g.cshtml.cs
 /Users/tammilee/Desktop/codingDojo/csharp/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Donor/DonorDashboard.g.cshtml.cs
 >>>>>>> 97d1ebe5ae5e3c5b32abd4b15a25bc65d8dffdcc
+<<<<<<< HEAD
 C:\Users\Jackie\Desktop\GoodApple\GoodApple\obj\Debug\netcoreapp2.2\Razor\Views\Donor\DonorDashboard.g.cshtml.cs
 C:\Users\Jackie\Desktop\GoodApple\GoodApple\obj\Debug\netcoreapp2.2\Razor\Views\Donor\newDonor.g.cshtml.cs
+=======
+/Users/tammilee/Desktop/codingDojo/csharp/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Home/AllProjects.g.cshtml.cs
+/Users/tammilee/Desktop/codingDojo/csharp/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Home/ProjectInfo.g.cshtml.cs
+/Users/tammilee/Desktop/codingDojo/csharp/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/EditProject.g.cshtml.cs
+/Users/tammilee/Desktop/codingDojo/csharp/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/ProjectPartial.g.cshtml.cs
+/Users/tammilee/Desktop/codingDojo/csharp/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/TeachDashboard.g.cshtml.cs
+/Users/tammilee/Desktop/codingDojo/csharp/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/TeacherReg.g.cshtml.cs
+>>>>>>> fe3b5b5ab7c2a485f7438a71285b42ce8ae361bf

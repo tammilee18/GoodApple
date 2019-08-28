@@ -45,17 +45,17 @@
       </div>
       <div class="modal-body">
         <div role="tabpanel">
-            <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#TeacherTab" aria-controls="TeacherTab" role="tab" data-toggle="tab">Teacher</a>
-
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active">
+                  <a href="#TeacherTab" aria-controls="TeacherTab" role="tab" data-toggle="tab">Teacher</a>
                 </li>
-                <li role="presentation"><a href="#DonorTab" aria-controls="DonorTab" role="tab" data-toggle="tab">Donor</a>
-
+                <li role="presentation">
+                  <a href="#DonorTab" aria-controls="DonorTab" role="tab" data-toggle="tab">Donor</a>
                 </li>
             </ul>
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="TeacherTab">
-                  <form asp-action="Login" asp-controller="Home" method="post">
+                  <form asp-action="TeacherLogin" asp-controller="Teacher" method="post">
                       <h2 class="text-center">Teacher Login</h2>
                       <div class="form-group">
                           <span asp-validation-for="Email"></span><br>

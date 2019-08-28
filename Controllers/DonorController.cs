@@ -50,18 +50,18 @@ namespace GoodApple.Controllers {
         }
 
         [HttpPost("DonorLogin")]
-        public IActionResult DonorLogin(LoginUser existingUser){
+        public IActionResult DonorLogin(LoginUser existingDonor){
             if(ModelState.IsValid){
-                User userInDB = dbContext.users.FirstOrDefault(u => u.Email == existingUser.Email);
+                User userInDB = dbContext.users.FirstOrDefault(u => u.Email == existingDonor.Email);
                 if(userInDB == null){
                     ModelState.AddModelError("Email", "Invalid email or password");
-                    return View("Index");
+                    return View("Index", "Home");
                 } else {
                     var hasher = new PasswordHasher<LoginUser>();
-                    var result = hasher.VerifyHashedPassword(existingUser, userInDB.Password, existingUser.Password);
+                    var result = hasher.VerifyHashedPassword(existingDonor, userInDB.Password, existingDonor.Password);
                     if(result == 0){
                         ModelState.AddModelError("Password", "Invalid email or password");
-                        return RedirectToAction("Index");
+                        return RedirectToAction("Index", "Home");
                     }
                     if(HttpContext.Session.GetInt32("UserId") == null){
                         HttpContext.Session.SetInt32("UserId", userInDB.UserId);
@@ -69,13 +69,18 @@ namespace GoodApple.Controllers {
                     return RedirectToAction("DonorDashboard");
                 }
             } else {
-                return View("Index");
+                return View("Index", "Home");
             }
         }
 
         [HttpGet("DonorDashboard")]
         public IActionResult DonorDashboard(){
-            return View();
+            if(HttpContext.Session.GetInt32("UserId") == null){
+                return RedirectToAction("Index", "Home");
+            }
+            WrapperModel newModel = new WrapperModel();
+            newModel.AllProjects = dbContext.projects.Include(p => p.Donors).ToList();
+            return View(newModel);
         }
 
     }

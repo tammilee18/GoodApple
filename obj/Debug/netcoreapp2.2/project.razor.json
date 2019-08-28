@@ -3026,6 +3026,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Donor\\DonorNav.cshtml",
+      "TargetPath": "Views\\Donor\\DonorNav.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Donor\\DonorDashboard.cshtml",
       "TargetPath": "Views\\Donor\\DonorDashboard.cshtml",
       "FileKind": "mvc"

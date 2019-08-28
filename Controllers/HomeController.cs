@@ -31,6 +31,10 @@ namespace GoodApple.Controllers {
         {
             return View();
         }
+<<<<<<< HEAD
+=======
+        
+>>>>>>> fe3b5b5ab7c2a485f7438a71285b42ce8ae361bf
         [HttpGet("logout")]
         public IActionResult Logout(){
             HttpContext.Session.Clear();
