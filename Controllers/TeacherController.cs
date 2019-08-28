@@ -50,12 +50,11 @@ namespace GoodApple.Controllers
                 dbContext.users.Add(newTeacher);
                 dbContext.SaveChanges();
                 InSession = newTeacher.UserId;
-                return RedirectToAction("TeachDashboard");
+                return RedirectToAction("TeachDashboard", new {TeacherId = newTeacher.UserId});
             }
             return View("TeacherReg");
         }
 
-        [HttpGet("dashboard/{TeacherId}")]
         public IActionResult TeacherLogin(LoginUser existingTeacher){
             if(ModelState.IsValid){
                 User userInDB = dbContext.users.FirstOrDefault(u => u.Email == existingTeacher.Email);
@@ -72,17 +71,16 @@ namespace GoodApple.Controllers
                     if(HttpContext.Session.GetInt32("UserId") == null){
                         HttpContext.Session.SetInt32("UserId", userInDB.UserId);
                     }
-                    return RedirectToAction("TeachDashboard");
+                    return RedirectToAction("TeachDashboard", new{TeacherId = userInDB.UserId});
                 }
             } else {
                 return View("Index", "Home");
             }
         }
 
-        [HttpGet("dashboard")]
-        public IActionResult TeachDashboard()
-        {
-            int TeacherId = (int)InSession;
+        [HttpGet("dashboard/{TeacherId}")]
+        public IActionResult TeachDashboard(int TeacherId){
+            TeacherId = (int)InSession;
             // if(InSession == null){
             //     return View("Index", "Home");
             // }
@@ -94,15 +92,17 @@ namespace GoodApple.Controllers
         [HttpPost("newproject")]
         public IActionResult NewProject(Project newProject)
         {
+            int CurrentTeacher = (int)InSession;
             if(ModelState.IsValid){
-                newProject.CreatorId = 1;
+                newProject.CreatorId = CurrentTeacher;
                 dbContext.projects.Add(newProject);
                 dbContext.SaveChanges();
-                return RedirectToAction("TeachDashboard");
+                return RedirectToAction("TeachDashboard", new{TeacherId = CurrentTeacher});
             }
             WrapperModel newModel = new WrapperModel();
+            newModel.LoggedInUser = dbContext.users.SingleOrDefault(u => u.UserId == CurrentTeacher);
             newModel.AllProjects = dbContext.projects.ToList();
-            return View("TeachDashboard");
+            return View("TeachDashboard", new{TeacherId = CurrentTeacher});
         }
 
     }

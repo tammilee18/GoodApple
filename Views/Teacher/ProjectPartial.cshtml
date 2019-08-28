@@ -1,4 +1,5 @@
-@model Project
+@model WrapperModel
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,15 +31,15 @@
       </div>
       <div class="modal-body">
         <form asp-action="NewProject" asp-controller="Teacher" method="post">
-            <input type="text" asp-for="Name" class="form-control" placeholder="Project Name">
+            <input type="text" asp-for="newProject.Name" class="form-control" placeholder="Project Name">
             <br>
-            <textarea asp-for="Description" class="form-control" cols="30" rows="10" placeholder="Description"></textarea>
+            <textarea asp-for="newProject.Description" class="form-control" cols="30" rows="10" placeholder="Description"></textarea>
             <br>
             <label for="">Amount Needed:</label>
-            <input type="number" asp-for="GoalAmount" class="form-control">
+            <input type="number" asp-for="newProject.GoalAmount" class="form-control">
             <br>
             <label for="">End Date:</label>
-            <input type="date" asp-for="EndDate" class="form-control">
+            <input type="date" asp-for="newProject.EndDate" class="form-control">
         <button type="submit" class="btn btn-primary">Create a Project</button>
 
         </form>
