@@ -55,6 +55,7 @@ namespace GoodApple.Controllers
             return View("TeacherReg");
         }
 
+        [HttpGet("dashboard/{TeacherId}")]
         public IActionResult TeacherLogin(LoginUser existingTeacher){
             if(ModelState.IsValid){
                 User userInDB = dbContext.users.FirstOrDefault(u => u.Email == existingTeacher.Email);
@@ -81,6 +82,7 @@ namespace GoodApple.Controllers
         [HttpGet("dashboard")]
         public IActionResult TeachDashboard()
         {
+            int TeacherId = (int)InSession;
             // if(InSession == null){
             //     return View("Index", "Home");
             // }
