@@ -66,19 +66,21 @@ namespace GoodApple.Controllers {
                     if(HttpContext.Session.GetInt32("UserId") == null){
                         HttpContext.Session.SetInt32("UserId", userInDB.UserId);
                     }
-                    return RedirectToAction("DonorDashboard");
+                    return RedirectToAction("DonorDashboard", new {donorID = userInDB.UserId});
                 }
             } else {
                 return View("Index", "Home");
             }
         }
 
-        [HttpGet("DonorDashboard")]
-        public IActionResult DonorDashboard(){
+        [HttpGet("DonorDashboard/{donorID}")]
+        public IActionResult DonorDashboard(int donorID){
             if(HttpContext.Session.GetInt32("UserId") == null){
                 return RedirectToAction("Index", "Home");
             }
+            donorID = HttpContext.Session.GetInt32("UserId").Value;
             WrapperModel newModel = new WrapperModel();
+            newModel.LoggedInUser = dbContext.users.SingleOrDefault(u => u.UserId == donorID);
             newModel.AllProjects = dbContext.projects.Include(p => p.Donors).ToList();
             return View(newModel);
         }

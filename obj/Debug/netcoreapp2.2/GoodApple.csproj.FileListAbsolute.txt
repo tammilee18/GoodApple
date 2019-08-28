@@ -77,3 +77,4 @@ C:/Users/Jackie/Desktop/GoodApple/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/
 /Users/tammilee/Desktop/codingDojo/csharp/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/ProjectPartial.g.cshtml.cs
 /Users/tammilee/Desktop/codingDojo/csharp/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/TeachDashboard.g.cshtml.cs
 /Users/tammilee/Desktop/codingDojo/csharp/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Teacher/TeacherReg.g.cshtml.cs
+/Users/tammilee/Desktop/codingDojo/csharp/GoodApple/obj/Debug/netcoreapp2.2/Razor/Views/Donor/DonorNav.g.cshtml.cs

@@ -52,7 +52,7 @@
                   </form>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="DonorTab">
-                  <form action="DonorLogin" method="post">
+                  <form asp-action="DonorLogin" asp-controller="Donor" method="post">
                       <h2 class="text-center">Donor Login</h2>
                       <div class="form-group">
                           <span asp-validation-for="Email"></span><br>
