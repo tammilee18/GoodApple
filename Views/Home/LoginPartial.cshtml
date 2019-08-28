@@ -1,3 +1,5 @@
+@model LoginUser
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,12 +14,7 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <!-- The button that triggers the Modal -->
-
 <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Login</button>
- 
-<!-- Bootstrap Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -28,14 +25,50 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="">
-            <input type="text" class="form-control" placeholder="First Name">
-            <br>
-            <input type="password" class="form-control" placeholder="password">
-            <br>
-        <button type="submit" class="btn btn-primary">Login</button>
+        <div role="tabpanel">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#TeacherTab" aria-controls="TeacherTab" role="tab" data-toggle="tab">Teacher</a>
 
-        </form>
+                </li>
+                <li role="presentation"><a href="#DonorTab" aria-controls="DonorTab" role="tab" data-toggle="tab">Donor</a>
+
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="TeacherTab">
+                  <form asp-action="Login" asp-controller="Home" method="post">
+                      <h2 class="text-center">Teacher Login</h2>
+                      <div class="form-group">
+                          <span asp-validation-for="Email"></span><br>
+                          <label asp-for="Email"></label>
+                          <input class="form-control" asp-for="Email"><br>
+                      </div>
+                      <div class="form-group">
+                          <span asp-validation-for="Password"></span><br>
+                          <label asp-for="Password"></label>
+                          <input class="form-control" asp-for="Password"><br>
+                      </div>
+                      <button class="btn btn-primary">Log In</button>
+                  </form>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="DonorTab">
+                  <form action="DonorLogin" method="post">
+                      <h2 class="text-center">Donor Login</h2>
+                      <div class="form-group">
+                          <span asp-validation-for="Email"></span><br>
+                          <label asp-for="Email"></label>
+                          <input class="form-control" asp-for="Email"><br>
+                      </div>
+                      <div class="form-group">
+                          <span asp-validation-for="Password"></span><br>
+                          <label asp-for="Password"></label>
+                          <input class="form-control" asp-for="Password"><br>
+                      </div>
+                      <button class="btn btn-primary">Log In</button>
+                  </form>
+                </div>
+            </div>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -43,6 +76,5 @@
     </div>
   </div>
 </div>
-<!-- END Bootstrap Modal -->
 </body>
 </html>
