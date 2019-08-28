@@ -55,9 +55,10 @@ namespace GoodApple.Controllers
             return View("TeacherReg");
         }
 
-        [HttpGet("dashboard")]
-        public IActionResult TeachDashboard()
+        [HttpGet("dashboard/{TeacherId}")]
+        public IActionResult TeachDashboard(int TeacherId)
         {
+             TeacherId = (int)InSession;
             // if(InSession == null){
             //     return View("Index", "Home");
             // }
