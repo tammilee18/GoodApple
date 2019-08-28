@@ -6,31 +6,29 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using GoodApple.Models;
 
-namespace GoodApple.Controllers
-{
-    public class HomeController : Controller
-    {
+namespace GoodApple.Controllers {
+    public class HomeController : Controller {
         private GoodAppleContext dbContext;
 
         public HomeController(GoodAppleContext context) {
             dbContext = context;
         }
 
-        public IActionResult Index()
-        {
+        public IActionResult Index(){
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
+        [HttpGet("logout")]
+        public IActionResult Logout(){
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
+        public IActionResult Error() {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
