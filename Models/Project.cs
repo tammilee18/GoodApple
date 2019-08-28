@@ -20,7 +20,6 @@ namespace GoodApple.Models {
             }
         }
 
-
         [Key]
         public int ProjectId {get;set;}
 
@@ -37,8 +36,8 @@ namespace GoodApple.Models {
         [Required]
         [ValidDate]
         public DateTime EndDate {get;set;}
-        List<Donor> Donors {get;set;}
-        List<Comment> Comments {get;set;}
+        public List<Donor> Donors {get;set;}
+        public List<Comment> Comments {get;set;}
 
         public DateTime CreatedAt {get;set;} = DateTime.Now;
         public DateTime UpdatedAt {get;set;} = DateTime.Now;

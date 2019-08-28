@@ -1,4 +1,5 @@
-@model Teacher
+@model WrapperModel
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,28 +10,29 @@
 </head>
 <body>
     <h1>Welcome Teacher!!</h1>
-    <partial name="ProjectPartial">
-        <table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col">Project Name</th>
-      <th scope="col">Goal</th>
-      <th scope="col">Created Date</th>
-      <th scope="col">End Date</th>
-      <th scope="col"># of Donors</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row"><a href="">project name</a></th>
-      <td>$$$</td>
-      <td>Date.Now</td>
-      <td>10/31/2019</td>
-      <td>10</td>
-
-    </tr>
-
-  </tbody>
-</table>
+    <a href="/logout">Logout</a>
+    <!-- <partial name="ProjectPartial"> -->
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Project Name</th>
+          <th scope="col">Goal</th>
+          <th scope="col">Created Date</th>
+          <th scope="col">End Date</th>
+          <th scope="col"># of Donors</th>
+        </tr>
+      </thead>
+      <tbody>
+        @foreach(Project proj in @Model.AllProjects){
+          <tr>
+            <th scope="row"><a href="">@proj.Name</a></th>
+            <td>@proj.GoalAmount</td>
+            <td>@proj.CreatedAt.ToString("MMMM dd, yyyy")</td>
+            <td>@proj.EndDate</td>
+            <td>@proj.Donors.Count</td>
+          </tr>
+        }
+      </tbody>
+    </table>
 </body>
 </html>
