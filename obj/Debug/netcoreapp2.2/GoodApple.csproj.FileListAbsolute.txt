@@ -58,3 +58,10 @@ C:\Users\Jackie\Desktop\GoodApple\GoodApple\obj\Debug\netcoreapp2.2\GoodApple.Vi
 C:\Users\Jackie\Desktop\GoodApple\GoodApple\obj\Debug\netcoreapp2.2\GoodApple.dll
 C:\Users\Jackie\Desktop\GoodApple\GoodApple\obj\Debug\netcoreapp2.2\GoodApple.pdb
 C:\Users\Jackie\Desktop\GoodApple\GoodApple\obj\Debug\netcoreapp2.2\GoodApple.csproj.CopyComplete
+C:\Users\Jackie\Desktop\GoodApple\GoodApple\obj\Debug\netcoreapp2.2\Razor\Views\Home\LoginPartial.g.cshtml.cs
+C:\Users\Jackie\Desktop\GoodApple\GoodApple\obj\Debug\netcoreapp2.2\Razor\Views\Home\AllProjects.g.cshtml.cs
+C:\Users\Jackie\Desktop\GoodApple\GoodApple\obj\Debug\netcoreapp2.2\Razor\Views\Home\ProjectInfo.g.cshtml.cs
+C:\Users\Jackie\Desktop\GoodApple\GoodApple\obj\Debug\netcoreapp2.2\Razor\Views\Teacher\TeachDashboard.g.cshtml.cs
+C:\Users\Jackie\Desktop\GoodApple\GoodApple\obj\Debug\netcoreapp2.2\Razor\Views\Teacher\TeacherReg.g.cshtml.cs
+C:\Users\Jackie\Desktop\GoodApple\GoodApple\obj\Debug\netcoreapp2.2\Razor\Views\Teacher\ProjectPartial.g.cshtml.cs
+C:\Users\Jackie\Desktop\GoodApple\GoodApple\obj\Debug\netcoreapp2.2\Razor\Views\Teacher\EditProject.g.cshtml.cs

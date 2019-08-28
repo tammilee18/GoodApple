@@ -2966,6 +2966,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Home\\AllProjects.cshtml",
+      "TargetPath": "Views\\Home\\AllProjects.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Home\\LoginPartial.cshtml",
       "TargetPath": "Views\\Home\\LoginPartial.cshtml",
       "FileKind": "mvc"
@@ -2973,6 +2978,16 @@
     {
       "FilePath": "Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\ProjectInfo.cshtml",
+      "TargetPath": "Views\\Home\\ProjectInfo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Teacher\\ProjectPartial.cshtml",
+      "TargetPath": "Views\\Teacher\\ProjectPartial.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2998,6 +3013,21 @@
     {
       "FilePath": "Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Teacher\\TeachDashboard.cshtml",
+      "TargetPath": "Views\\Teacher\\TeachDashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Teacher\\EditProject.cshtml",
+      "TargetPath": "Views\\Teacher\\EditProject.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Teacher\\TeacherReg.cshtml",
+      "TargetPath": "Views\\Teacher\\TeacherReg.cshtml",
       "FileKind": "mvc"
     },
     {
